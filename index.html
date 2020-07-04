@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>中华人民共和国万岁</title>
+<!--
+	ref: https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E6%97%97#/media/File:Construction_sheet_of_Flag_of_the_People's_Republic_of_China.svg
+	color: https://github.com/pixelastic/css-flags/blob/master/app/styles/_flags/chn.scss
+-->
+<style type="text/css">
+
+div {
+	margin: 0;
+	padding: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.container {
+	position: relative;
+	/* ratio is 3 : 2 */
+	width: 900px;
+	height: 600px;
+}
+
+.flag {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #de2910;
+}
+
+.canton {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	font-size: 30px;
+}
+
+/* 100em == 2 * R */
+.star {
+	position: absolute;
+	transform: translate(-47.55282581475768em, -19.09830056250526em);
+	transform-origin: top left;
+}
+
+.star-fragment-0, .star-fragment-1, .star-fragment-2 {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 47.55282581475767em solid transparent;
+	border-right: 47.55282581475767em solid transparent;
+	border-bottom: 34.54915028125263em solid #ffda24;
+	transform-origin: center 19.09830056250526em;
+}
+
+.star-fragment-0 { transform: rotate(-36deg); }
+.star-fragment-1 { transform: rotate(36deg); }
+.star-fragment-2 { transform: rotate(108deg); }
+
+.star-big {
+	position: absolute;
+	left: calc(100% / 3);
+	top: 50%;
+	font-size: 6%
+}
+
+.star-small {
+	position: absolute;
+	font-size: 2%;
+}
+
+.star-small-0 {
+	left: calc(200% / 3);
+	top: 20%;
+	transform: rotate(23.03624346792648deg);
+}
+
+.star-small-1 {
+	left: 80%;
+	top: 40%;
+	transform: rotate(45.869897645844034deg);
+}
+
+.star-small-2 {
+	left: 80%;
+	top: 70%;
+	transform: rotate(-2.054604099077153deg);
+}
+
+.star-small-3 {
+	left: calc(200% / 3);
+	top: 90%;
+	transform: rotate(20.659808254090088deg);
+}
+
+.ref-grid {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	background-size: 30px 30px;
+	background-image: linear-gradient(to right, black 1px, transparent 1px), linear-gradient(to bottom, black 1px, transparent 1px);
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="flag">
+				<div class="canton">
+					<div class="star-big">
+						<div class="star">
+							<div class="star-fragment-0"></div>
+							<div class="star-fragment-1"></div>
+							<div class="star-fragment-2"></div>
+						</div>
+					</div>
+					<div class="star-small star-small-0">
+						<div class="star">
+							<div class="star-fragment-0"></div>
+							<div class="star-fragment-1"></div>
+							<div class="star-fragment-2"></div>
+						</div>
+					</div>
+					<div class="star-small star-small-1">
+						<div class="star">
+							<div class="star-fragment-0"></div>
+							<div class="star-fragment-1"></div>
+							<div class="star-fragment-2"></div>
+						</div>
+					</div>
+					<div class="star-small star-small-2">
+						<div class="star">
+							<div class="star-fragment-0"></div>
+							<div class="star-fragment-1"></div>
+							<div class="star-fragment-2"></div>
+						</div>
+					</div>
+					<div class="star-small star-small-3">
+						<div class="star">
+							<div class="star-fragment-0"></div>
+							<div class="star-fragment-1"></div>
+							<div class="star-fragment-2"></div>
+						</div>
+					</div>
+				</div>
+				<div class="ref-grid" hidden>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
